@@ -93,9 +93,9 @@ int main(int argc, char *argv[])
             ;
     CommandLineParser parser(argc, argv, keys);
 
-    string img_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/resized_IMG_3875.JPG");  // image to register
-    string ply_read_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/box.ply");          // object mesh
-    string write_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/cookies_ORB.yml");     // output file
+    string img_path = samples::findFile("../Data/resized_IMG_3875.JPG");  // image to register
+    string ply_read_path = samples::findFile("../Data/box.ply");          // object mesh
+    string write_path = samples::findFile("../Data/cookies_ORB.yml");     // output file
     int numKeyPoints = 2000;
     string featureName = "ORB";
 

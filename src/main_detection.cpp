@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
             ;
     CommandLineParser parser(argc, argv, keys);
 
-    string video_read_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/box.mp4");       // recorded video
-    string yml_read_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/cookies_ORB.yml"); // 3dpts + descriptors
-    string ply_read_path = samples::findFile("samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/Data/box.ply");         // mesh
+    string video_read_path = samples::findFile("../Data/box.mp4");       // recorded video
+    string yml_read_path = samples::findFile("../Data/cookies_ORB.yml"); // 3dpts + descriptors
+    string ply_read_path = samples::findFile("../Data/box.ply");         // mesh
 
     // Intrinsic camera parameters: UVC WEBCAM
     double f = 55;                           // focal length in mm
