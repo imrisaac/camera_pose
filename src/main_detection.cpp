@@ -181,7 +181,7 @@ int main(int argc, char *argv[])
     namedWindow("REAL TIME DEMO", WINDOW_KEEPRATIO);
 
     VideoCapture cap;                           // instantiate VideoCapture
-    cap.open(video_read_path);                  // open a recorded video
+    cap.open();                  // open a recorded video
 
     if(!cap.isOpened())   // check if we succeeded
     {
